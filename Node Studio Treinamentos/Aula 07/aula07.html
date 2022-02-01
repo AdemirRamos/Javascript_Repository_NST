@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - DOM: "getElementById" & "getElementsByClassName"</title>
+
+</head>
+
+<body>
+    
+    <div id="fruta">Laranja.</div><hr>
+
+    <div class="carro">Golf</div><hr>
+    <div class="carro">Camaro</div><hr>
+
+    <script>
+
+        //Graças ao DOM, podemos manipular os elementos HTML da página.
+
+        console.log(document.getElementById('fruta').innerText)
+
+        console.log(document.getElementsByClassName('carro'))
+        console.log(document.getElementsByClassName('carro')[0])
+        console.log(document.getElementsByClassName('carro')[1])
+        console.log(document.getElementsByClassName('carro')[0].innerHTML)
+        console.log(document.getElementsByClassName('carro')[1].innerText)
+
+    </script>
+
+</body>
+
+</html>
