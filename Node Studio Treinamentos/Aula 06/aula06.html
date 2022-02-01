@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Sobre o DOM (Parte 2)</title>
+
+</head>
+
+<body>
+    
+    <button onclick="voltar()">Anterior</button>
+    <button onclick="avançar()">Próximo</button>
+
+    <script>
+
+        console.log('Largura da janela: ', window.screen.width)
+        console.log('Altura da janela: ', window.screen.height)
+        console.log(window.screen.orientation) //Essa é uma maneira de ver uma lista com todos os métodos de um objeto.
+        console.log(window.screen.orientation.type)
+        console.log(window.navigator) //Novamente: essa é uma maneira de ver uma lista com todos os métodos de um objeto.
+        console.log(window.navigator.appName)
+        console.log(window.navigator.appVersion)
+        console.log(window.navigator.language)
+        console.log(window.location) //Lista de métodos.
+        console.log(window.location.href)
+
+        //console.log(window.location.href='http://www.google.com') -> Redirecionamento.
+
+        console.log(window.history) //Lista de métodos.
+
+        function voltar() {
+            window.history.back()
+        }
+
+        function avançar() {
+            window.history.forward()
+        }
+
+        document.getElementById('largura').innerHTML = window.screen.width
+
+    </script>
+
+    <img src="Imagens/BOM e DOM.png" alt="Uma imagem ilustrativa a respeito de BOM e DOM.">
+
+    <div id="largura"></div>
+
+</body>
+
+</html>
