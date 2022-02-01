@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - "innerHTML", "Style" e Atributos</title>
+
+</head>
+
+<body>
+    
+    <p id="p1">Olá, mundo!</p>
+    <p id="p2">Olá, mundo!</p>
+
+    <img src="" alt="">
+
+    <script>
+
+        var parágrafo, imgagem
+
+        console.log(document.getElementById('p1'))
+        console.log(document.getElementById('p1').innerText)
+
+        document.getElementById('p1').innerHTML = 'Novo conteúdo.'
+        
+        parágrafo = document.getElementById('p2')
+
+        parágrafo.innerText = 'Novo conteúdo 2.'
+        parágrafo.style.color = 'coral'
+        parágrafo.style.textShadow = '1px 1px 1px black'
+        parágrafo.style.backgroundColor = 'burlywood'
+        parágrafo.style.height = '30px'
+
+        imagem = document.getElementsByTagName('img')[0]
+
+        console.log(imagem)
+
+        imagem.src = 'Imagens/BOM e DOM.png'
+        imagem.alt = 'Uma imagem ilustrativa a respeito de BOM e DOM.'
+        imagem.width = '800'
+        imagem.height = '400'
+        
+    </script>
+
+</body>
+
+</html>
