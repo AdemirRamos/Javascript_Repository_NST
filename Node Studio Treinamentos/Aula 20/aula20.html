@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 20 - Tipos de Dados</title>
+
+</head>
+
+<body>
+    
+    <script>
+
+        //Tipos de dados:
+
+        //1ª: "string":
+
+        var nome = 'Ademir'
+
+        document.write(`Tipo primitivo da variável "nome": "${typeof(nome)}". <hr>`)
+
+        //2ª: "number":
+
+        var idade = 25 //Em JS, não é preciso especificar o tipo do número ao declará-lo em uma variável.
+
+        document.write(`Tipo primitivo da variável "idade": "${typeof(idade)}". <hr>`)
+
+        //3ª: "boolean":
+
+        var bonita = true
+
+        document.write(`Tipo primitivo da variável "bonita": "${typeof(bonita)}". <hr>`)
+
+        //Em JS, as variáveis não precisam receber uma especificação, ao serem declaradas, quanto ao seu tipo. Esse processo é automático.
+
+        //4ª: "array":
+
+        var frutas = ['goiaba', 'maçã', 'banana']
+
+        document.write(`Tipo primitivo da variável "frutas": "${typeof(frutas)}". <hr>`)
+
+        //"array" é um tipo "especial" de objeto.
+
+        //5ª: "object":
+
+        var carro = new Object()
+
+        carro.fabricação = '2025'
+        carro.cor = 'azul'
+
+        document.write(`Tipo primitivo da variável "carro": "${typeof(carro)}". | Fabricação: ${carro.fabricação}. <hr>`)
+
+        //6ª: "function":
+
+        var soma = function(a, b) {return a + b}
+
+        document.write(`Tipo primitivo da variável "soma": "${typeof(soma)}". <hr>`)
+
+        document.write(`Tipo primitivo da variável "soma" (com parâmetros): "${typeof(soma(6, 7))}". <hr>`)
+
+        document.write(`Resultado da soma: ${soma(6, 7)}. <hr>`)
+
+    </script>
+
+</body>
+
+</html>
