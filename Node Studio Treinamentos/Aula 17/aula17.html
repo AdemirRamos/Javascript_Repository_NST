@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17 - "createTextNode" e "textContent"</title>
+
+</head>
+
+<body>
+    
+    <h1></h1>
+    <p></p>
+
+    <script>
+
+        var título = document.querySelector('h1')
+        var texto = document.createTextNode('Um texto qualquer.')
+
+        título.appendChild(texto)
+
+        //"textContent nos oferece o mesmo resultado:
+        var title = document.getElementsByTagName('p')[0]
+        title.textContent = 'Outro texto qualquer.'
+
+    </script>
+
+</body>
+
+</html>
