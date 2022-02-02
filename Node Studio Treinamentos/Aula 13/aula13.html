@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13 - "childNodes"</title>
+
+</head>
+
+<body>
+    
+    <img src="Mídia/Árvore DOM.png" alt="Uma imagem ilustrativa representando a 'Árvore DOM'.">
+
+    <button id="botão">Ver Lista</button>
+
+    <div>
+
+        <h1>Título</h1>
+        <p>Texto.</p>
+
+    </div>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        console.log(document.documentElement.lastChild) //O comando ao lado nos mostra o último filho adicionado ao documento.
+
+        console.log(document.documentElement.firstChild) //O comando ao lado nos mostra o primeiro filho adicionado ao documento.
+
+        var nó = document.body.childNodes
+        
+        //O comando acima retorna todos os "nós-filhos" do "nó-body" ("nó-pai", nesse caso) em uma "node list".
+        
+        //Uma "node list" é uma lista ordenada de nós.
+
+        console.log(nó)
+
+    </script>
+
+</body>
+
+</html>
