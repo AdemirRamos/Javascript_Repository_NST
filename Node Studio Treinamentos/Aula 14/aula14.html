@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 - "nodeName", "nodeType" e "nodeValue"</title>
+
+</head>
+
+<body>
+    
+    <!--Teste.-->
+
+    <img src="Mídia/Árvore DOM.png" alt="Uma imagem ilustrativa representando a 'Árvore DOM'.">
+
+    <button id="botão">Ver Lista</button>
+
+    <div>
+
+        <h1>Título</h1>
+        <p>Texto.</p>
+
+    </div>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        console.log(document.documentElement.lastChild) //O comando ao lado nos mostra o último filho adicionado ao documento.
+
+        console.log(document.documentElement.firstChild) //O comando ao lado nos mostra o primeiro filho adicionado ao documento.
+
+        var nó = document.body.childNodes
+        
+        //O comando acima retorna todos os "nós-filhos" do "nó-body" ("nó-pai", nesse caso) em uma "node list".
+        
+        //Uma "node list" é uma lista ordenada de nós.
+
+        console.log(nó)
+
+        var lista = document.body.childNodes
+
+        console.log(`Total de itens na lista: ${lista.length}.`)
+
+        console.log(lista[5].innerHTML)
+        console.log(lista[5].nodeName) //Retorna o nome do nó.
+        console.log(lista[1].nodeType)
+        
+        //O comando acima retorna o tipo do nó.
+        
+        //Somente estes valores ser retornados: 1 == nó de elemento; 2 == nó de atributo; 3 == nó de texto; 8 == nó de comentário.
+
+        console.log(lista[1].nodeValue)
+        
+        //O comando acima retorna os seguintes valores:
+        
+        //nulo para "nós de elemento";
+        //retorna o valor de um atributo de um "nó de atributo";
+        //retorna o conteúdo no caso de nós de texto/comantário.
+
+        console.log(lista[7].childNodes[3].childNodes[0].nodeValue)
+        
+        //Retornando uma "node list" (e seus itens) a partir d'outras "node list".
+
+    </script>
+
+</body>
+
+</html>
