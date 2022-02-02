@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 - "children" e "insertBefore"</title>
+
+</head>
+
+<body>
+    
+    <ul>
+
+        <li>Café;</li>
+        <li>Leite;</li>
+        <li>Água.</li>
+
+    </ul>
+
+    <ul>
+
+        <li>Pão;</li>
+        <li>Queijo;</li>
+        <li>Nutella.</li>
+
+    </ul>
+
+    <script>
+
+        var lista = document.getElementsByTagName('ul') //Capturando ambas as listas.
+        var lista_1 = document.getElementsByTagName('ul')[0] //Capturando somente a primeira lista.
+        var lista_2 = document.getElementsByTagName('ul')[1] //Capturando somente a segunda lista.
+        var itens = document.getElementsByTagName('li') //Capturando os itens das listas.
+        var itens_2 = lista_1.children //Capturando os elementos-filho somente da primeira lista.
+        
+        //Inserindo um novo item a uma determinada lista antes de um determinado elemento:
+
+        var novo_item = document.createElement('li')
+        novo_item.textContent = 'Suco de Laranja;'
+        lista_1.insertBefore(novo_item, itens_2[0])
+
+        console.log(lista)
+
+    </script>
+
+</body>
+
+</html>
