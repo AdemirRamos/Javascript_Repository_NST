@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 - "getAttribute", "setAttribute" e "removeAttribute"</title>
+
+    <style>
+
+        .red {
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 id="title">Flamengo campeão</h1>
+
+    <button id="botão_set">Set</button>
+    <button id="botão_remove">Remove</button>
+    <button id="botão_get">Get</button>
+
+    <p id="class"></p>
+
+    <script>
+
+        document.getElementById('botão_set').addEventListener('click', function () {
+            document.getElementById('title').setAttribute('class', 'red')
+
+            //Em "setAttribute" devemos definir o atributo que será aplicado e o seu nome.
+        })
+
+        document.getElementById('botão_remove').addEventListener('click', function () {
+            document.getElementById('title').removeAttribute('class')
+
+            //Em "removeAttribute" é preciso indicar, entre aspas, o atributo a ser removido.
+        })
+
+        document.getElementById('botão_get').addEventListener('click', function () {
+            var atributo = document.getElementById('title').getAttribute('class')
+            document.getElementById('class').innerHTML = atributo
+
+            //Em "getAttribute" é preciso indicar, entre aspas, qual será o atributo capturado. 
+        })
+
+    </script>
+
+</body>
+
+</html>
