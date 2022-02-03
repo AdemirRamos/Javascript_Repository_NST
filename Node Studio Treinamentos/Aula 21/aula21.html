@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 21 - Variáveis ("var", "let", "const" e Escopo)</title>
+
+</head>
+
+<body>
+    
+    <script>
+
+        //Variável: é uma referência a um espaço na memória do computador que serve para guardar uma determinada informação.
+
+        //As regras de criação de variáveis, em JS, é a regra geral de criação de variáveis.
+
+        var nome = 'Ademir' //Escopo: global.
+
+        if (true) {
+            let nome = 'Ramos' //O primeiro valor da variável "nome" será substituído. | Escopo: local.
+
+            //"let" é uma variável de escopo local (a variável só é acessível a partir do local onde foi declarada).
+        }
+
+        console.log(nome)
+
+        const idade = 25 //"const" é uma variável imutável (independentemente do escopo).
+
+    </script>
+
+</body>
+
+</html>
