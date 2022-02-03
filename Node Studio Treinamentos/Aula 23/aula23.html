@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23 - Objetos</title>
+
+</head>
+
+<body>
+    
+    <script>
+
+        /*Objeto: é uma coleção de propriedades; uma propriedade é uma associação entre um nome (ou chave) e um valor; um valor de propriedade pode ser uma função, que então, é considerada um método do objeto.*/
+
+        let pessoa = {
+            nome: 'Ademir',
+            idade: 25,
+            feliz: false,
+            pets: ['cachorro', 'gato'],
+            carros: {
+                    camaro: {
+                    placa: '123456',
+                    cor: 'verde'
+                },
+
+                uno: {
+                    placa: '456789',
+                    cor: 'branco'
+                }
+            },
+            andar: function(km) {
+                document.write(`${pessoa.nome} andou ${km} km.`)
+            }
+        }
+        
+        pessoa.nome = 'Ramos' //Reescrevendo um valor do objeto.
+        pessoa.pets[1] = 'Guinea Pig' //Reescrevendo um valor dentro de um "array" dentro de um objeto.
+
+        pessoa.andar(10) //Chamando uma função dentro de um objeto (passando um parâmetro).
+
+        console.log(pessoa)
+        console.log(pessoa.nome)
+        console.log(pessoa.pets[0])
+        console.log(pessoa.carros.camaro)
+        console.log(pessoa.carros.camaro.placa)
+        console.log(pessoa.carros.camaro.cor)
+
+        //"Dentro do JS, tudo são objetos": window.document.getElementById('').
+
+    </script>
+
+</body>
+
+</html>
