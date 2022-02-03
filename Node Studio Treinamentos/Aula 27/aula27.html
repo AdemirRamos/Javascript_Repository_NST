@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 27 - Condicionais ("if", "else", "else if", "swtich")</title>
+
+</head>
+
+<body>
+    
+    <script>
+
+        let país = 'Brasil'
+        let estado = 'BA'
+
+        if (país == 'Brasil') {
+            console.log('Sou brasileiro.')
+        }
+
+        else if (estado == 'BA') {
+            console.log('Sou baiano.')
+        }
+
+        else {
+            console.log('Sou gringo.')
+        }
+
+        switch (país) {
+            
+            case 'Brasil':
+                console.log('Sim, Brasil.')
+                break
+
+            case 'Nova Zelândia':
+                console.log('Sim, Nova Zelândia.')
+                break
+
+            default:
+                console.log('Não é o Brasil.')
+                break
+        }
+
+    </script>
+
+</body>
+
+</html>
