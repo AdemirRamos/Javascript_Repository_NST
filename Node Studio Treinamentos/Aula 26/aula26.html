@@ -48,11 +48,11 @@
         let idade_2 = 14
 
         let eleitor_1 = idade >= 16 ? 'Voto opcional.' : 'Situação indefinida.'
-        let eleitor_2 = !idade_2 <= 16 ? 'O eleitor não pode votar.' : 'Situação indefinida.'
+        let eleitor_2 = !(idade_2 >= 16) ? 'O eleitor não pode votar.' : 'Situação indefinida.'
 
-        //Em ambos os casos acima, o teste lógico pode ir ou não dentro de parênteses.
+        //O primeiro teste lógico, acima, pode ir ou não dentro de parênteses, o segundo deve ir entre parênteses.
 
-        //A exclamação inverte o resultado do teste lógico.
+        //A exclamação inverte o teste lógico.
 
         console.log('Eleitor 16: ', eleitor_1)
         console.log('Eleitor 14: ', eleitor_2)
