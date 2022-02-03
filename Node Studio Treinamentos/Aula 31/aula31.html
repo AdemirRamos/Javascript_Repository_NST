@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 31 - "alert", "prompt", "confirm"</title>
+
+</head>
+
+<body>
+    
+    <script>
+
+        alert('Isto é um "alert".')
+        let nome = prompt('Digite o seu nome: ') //Caso se clique em "cancelar", à variável nome, será atribuído o valor "null".
+        console.log(confirm('Isto é um "confirm".')) //Retorna "true" (se clicado em "ok") ou "false" (se clicado em "cancelar").
+        
+        console.log(`O nome digitado foi: ${nome}.`)
+
+        let resposta = confirm('Sim ou não?')
+
+        if (resposta) { //Outra maneira de se escrever este teste lógico: "if (resposta == true)".
+            console.log('A resposta foi afirmativa.')
+        }
+
+        else {
+            console.log('A resposta foi negativa.')
+        }
+
+    </script>
+
+</body>
+
+</html>
