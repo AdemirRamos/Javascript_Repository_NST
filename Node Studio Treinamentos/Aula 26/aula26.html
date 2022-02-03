@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 26 - Operadores Lógicos: Comparação e Ternário</title>
+
+</head>
+
+<body>
+    
+    <script>
+
+        /*Operadores de Comparação:
+
+        =: recebe; ==: igual;
+        ===: idêntico;
+        !=: diferente;
+        !==: não idêntico;
+        >: maior que;
+        <: menor que;
+        >=: maior ou igual;
+        <=: menor ou igual;*/
+
+        /*Operadores Lógicos:
+        
+        &&: e;
+        ||: ou.*/
+
+        let x = 5
+
+        console.log(x == 5) //Retorno "boolean - true".
+        console.log(x == '5') //Retorno "boolean - true". "x" é igual a '5'.
+        console.log(x === '5') //Retorno "boolean - false". "x" não é idêntico a '5'.
+        console.log(x != 4)
+        console.log(x != '5') //Retorno "boolean - false".
+        console.log(x !== '5') //Retorno "boolean - true".
+
+        let média = 8
+        let frequência = 80
+
+        console.log('Média: ', média >= 7 && frequência >= 80)
+
+        //Operador Ternário:
+
+        let idade = 16
+        let idade_2 = 14
+
+        let eleitor_1 = idade >= 16 ? 'Voto opcional.' : 'Situação indefinida.'
+        let eleitor_2 = !idade_2 <= 16 ? 'O eleitor não pode votar.' : 'Situação indefinida.'
+
+        //Em ambos os casos acima, o teste lógico pode ir ou não dentro de parênteses.
+
+        //A exclamação inverte o resultado do teste lógico.
+
+        console.log('Eleitor 16: ', eleitor_1)
+        console.log('Eleitor 14: ', eleitor_2)
+
+    </script>
+
+</body>
+
+</html>
